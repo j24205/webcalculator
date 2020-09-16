@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>网页计算器</title>
+
+		<script type="text/javascript" src="js/calculator.js">
+		</script>
+<!-- 		<style type="text/css">
+			*{font-size: 25px;}
+			.btmark{
+			
+				color: chocolate;
+				width: 40px;height: 35px;
+			}
+			.btnum{
+				color: coral;
+				width: 40px;height: 35px;
+			}
+		</style> -->
+	<link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+	<!-- 外部css引用方法 -->
+	
+	</head>
+	<body>
+		<h1 align="center"><b>网页计算器</b></h1>
+		<br>
+		<p align="center">
+		<tr>
+			<td colspan="4">
+				输入：<input type="text" class="textframe" value="0" id="inputresult" />
+				<br>
+				结果：<input type="text" class="textframe" value="0" id="result" />
+			</td>        
+		</tr>
+		</p>
+			<br>
+		<p align="center">
+			<tr>
+				<button type="button" class="btmark" name="btac" onclick="funcAC()">AC</button>
+				<button type="button" class="btmark" name="btbs" onclick="funcbackspace()"><--</button>
+				<button type="button" class="btmark" name="btlk" onclick="funcin('(')">(</button>
+				<button type="button" class="btmark" name="btrk" onclick="funcin(')')">)</button>
+			</tr>
+			<br>
+		<tr>
+			
+			<button type="button" class="btnum" name="bt1" onclick="funcin('1')">1</button>
+			<button type="button" class="btnum" name="bt2" onclick="funcin('2')">2</button>
+			<button type="button" class="btnum" name="bt3" onclick="funcin('3')">3</button>
+			<button type="button" class="btmark" name="btplus" onclick="funcin('+')">+</button>
+		</tr>
+		<br>
+		<tr>
+			<button type="button" class="btnum" name="bt4" onclick="funcin('4')">4</button>
+			<button type="button" class="btnum" name="bt5" onclick="funcin('5')">5</button>
+			<button type="button" class="btnum" name="bt6" onclick="funcin('6')">6</button>
+			<button type="button" class="btmark" name="btmunis" onclick="funcin('-')">-</button>
+		</tr>
+		<br>
+		<tr>
+			<button type="button" class="btnum" name="bt7" onclick="funcin('7')">7</button>
+			<button type="button" class="btnum" name="bt8" onclick="funcin('8')">8</button>
+			<button type="button" class="btnum" name="bt9" onclick="funcin('9')">9</button>
+			<button type="button" class="btmark" name="bttimes" onclick="funcin('*')">x</button>
+		</tr>
+		<br>
+		<tr>
+			<button type="button" class="btmark" name="btdot" onclick="funcin('.')">.</button>
+			<button type="button" class="btnum" name="bt2" onclick="funcin('0')">0</button>
+			<button type="button" class="btdiv" name="bt3" onclick="funcin('/')">÷</button>
+			<button type="button" class="btmark" name="btequal" onclick="funceqal()">=</button>
+		</tr>
+		<br>
+		<tr>
+			<!-- <button type="button" onclick="funcin('test');javascript:alert('你点了test')">test</button> -->
+		</tr>
+		</p>
+	</body>
+</html>
